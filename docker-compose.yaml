@@ -5,8 +5,7 @@ services:
     working_dir: /app
     command: sh -c "npm install && node server.js"
     volumes:
-      - ./server.js:/app/server.js:ro
-      - ./package.json:/app/package.json:ro
+      - .:/app
     restart: always
     labels:
       - "coolify.managed=true"
