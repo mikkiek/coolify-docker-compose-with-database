@@ -1,7 +1,6 @@
 services:
   app:
     build: .
-    container_name: app
     restart: always
     expose:
       - "3000"
