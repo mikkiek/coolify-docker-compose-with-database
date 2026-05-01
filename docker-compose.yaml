@@ -3,10 +3,6 @@ services:
     build: .
     container_name: app
     restart: always
-    # No volumes or command needed anymore!
     labels:
-      - "coolify.managed=true"
-      - "traefik.enable=true"
-      - "traefik.http.middlewares.gzip.compress=true"
-      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
-      - "traefik.http.services.web.loadbalancer.server.port=3000"
+      - "coolify.managed=true"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
