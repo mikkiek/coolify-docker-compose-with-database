@@ -5,4 +5,3 @@ services:
     restart: always
     labels:
       - "coolify.managed=true"
-      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
