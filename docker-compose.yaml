@@ -5,3 +5,5 @@ services:
     restart: always
     labels:
       - "coolify.managed=true"
+      - "traefik.enable=true"
+      - "traefik.http.services.web.loadbalancer.server.port=3000"
