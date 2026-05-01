@@ -43,7 +43,7 @@ const server = http.createServer(async (req, res) => {
 
     res.statusCode = 200;
     res.setHeader('Content-Type', 'text/html');
-    res.end(`<h1>Total Visits: ${count}</h1><p>Persistent Data stored in Postgres. Hello York!</p>`);
+    res.end(`<h1>Total Visits: ${count}</h1><p>Persistent Data stored in Postgres. Hello Pal!</p>`);
   } catch (err) {
     console.error('Database error:', err);
 
