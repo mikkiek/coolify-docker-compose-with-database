@@ -5,7 +5,3 @@ services:
     restart: always
     labels:
       - "coolify.managed=true"
-      - "traefik.enable=true"
-      - "traefik.http.middlewares.gzip.compress=true"
-      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
-      - "traefik.http.services.web.loadbalancer.server.port=3000"
