@@ -6,3 +6,4 @@ services:
     # No volumes or command needed anymore!
     labels:
       - "coolify.managed=true"
+      - "traefik.http.middlewares.redirect-to-https.redirectscheme.scheme=https"
